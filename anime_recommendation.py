@@ -269,6 +269,9 @@ def print_userfeature():
     print('query list:', query_list)
 
 def save(user_name):
+    if not os.path.exists('./users/' + user_name):
+        os.mkdir('./users/' + user_name)
+
     with open('./users/'+user_name+'/anime.pkl', 'wb') as f:
         pickle.dump(animeList, f)
     with open('./users/'+user_name+'/genres.pkl', 'wb') as f:
@@ -306,14 +309,13 @@ if os.path.exists('./users/' + user_name):
         user_theme = pickle.load(f)
     with open('./users/'+user_name+'/demographic.pkl', 'rb') as f:
         user_demographic = pickle.load(f)
-else:
-    os.mkdir('./users/' + user_name)
 
 
 while 1:
     Input = input("$ ")
     if Input.find(' ') == -1:
         if Input == 'exit':
+            save(user_name)
             sys.exit()
         elif Input == 'ls':
             ls()

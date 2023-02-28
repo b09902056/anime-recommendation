@@ -8,11 +8,11 @@ https://github.com/elastic/elasticsearch
 
 Modify the password in anime_recommendation.py:
 
-![](./pictures/Screenshot from 2023-01-20 22-25-39.png)
+![](./pictures/picture1.png)
 
 How to get http_ca.crt:
 
-![](./pictures/Screenshot from 2023-01-20 22-24-15.png)
+![](./pictures/picture2.png)
 
 ## How to use the Recommendation System
 
@@ -37,7 +37,7 @@ python anime_recommendation.py
 	
 	https://myanimelist.net/anime/16498/Shingeki_no_Kyojin
 	
-	![](./pictures/Screenshot from 2023-01-20 22-41-17.png)
+	![](./pictures/picture3.png)
 	
 * `remove {anime name}` : Remove {anime name} from user's anime list.
 * 	`ls` : List user's anime list.
@@ -45,7 +45,7 @@ python anime_recommendation.py
 * `save` : Save user's anime list into the system.
 * `recommend` : Recommend 10 anime based on the user's anime list.
 * `user feature` : Show the user's features. The features are from the anime's features in user's anime list.
-* `exit` : Exit the program.
+* `exit` : Save and exit.
 * `elasticsearch upload` : Upload the data of 3000 anime from anime-list.json to Elasticsearch.
 * `elasticsearch delete` : Delete all the anime data on Elasticsearch.
 
