@@ -1,5 +1,8 @@
 # Anime Recommendation System
 
+## Introduction
+Crawl data from MyAnimeList. Use search engine Elasticsearch to recommend anime by user’s preference.
+
 ## Install and Run Elasticsearch
 
 Install and Run:
